@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fbf1e9;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  padding-left: 21px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tareasdiv {
+  text-align: center;
+  padding: 7px;
+  margin-top: 8px;
+  background-color: blanchedalmond;
+  border: 2px dashed #f50057;
+}
+
+.btn {
+  margin: 2px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  background-color: white;
+}
+
+.btn:hover {
+  border-radius: 25px;
+}
+
+#agregar {
+  border: 2px solid rgb(144, 238, 144);
+}
+
+#agregar:active {
+  background-color: rgb(144, 238, 144);
+}
+
+#borrar {
+  border: 2px solid #f50057;
+}
+
+#borrar:active {
+  background-color: #f50057;
+}
+
+input[type="text"] {
+  margin-right: 5px;
+  padding: 7px 0;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(144, 238, 144);
+  transition: 0.7s;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  padding: 7px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+li::marker {
+  content: "📌";
 }
